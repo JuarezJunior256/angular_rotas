@@ -1,3 +1,3 @@
 # AngularRotas
 
-Estudos focados em Rotas do Angular.
+Estudos focado em Rotas do Angular.
