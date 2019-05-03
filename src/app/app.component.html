@@ -2,11 +2,14 @@
   <div class="nav-wrapper">
     <a [routerLink]="['/']" class="brand-logo right">Logo</a>
     <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a [routerLink]="['/login']" routerLinkActive="login" >Login</a></li>
-      <li><a [routerLink]="['/cursos']" routerLinkActive="cursos" >Cursos</a></li>
+      <li><a [routerLink]="['/login']" routerLinkActive="routerLinkActive" >Login</a></li>
+      <li><a [routerLink]="['/cursos']" routerLinkActive="routerLinkActive" >Cursos</a></li>
+      <li><a [routerLink]="['/curso', idCurso.value]" routerLinkActive="routerLinkActive" >Cursos Detalhe</a></li>
     </ul>
   </div>
 </nav>
 <div class="container">
+  <p>Entre com o id do curso</p>
+  <input type="text" #idCurso>
   <router-outlet></router-outlet>
 </div>
