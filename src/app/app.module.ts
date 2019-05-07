@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { CursosModule } from './cursos/cursos.module';
+
+// import { CursosModule } from './cursos/cursos.module';
+// import { AlunosModule } from './alunos/alunos.module';
 // import { CursosComponent } from './cursos/cursos.component';
 // import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 // import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
@@ -16,14 +18,15 @@ import { CursosModule } from './cursos/cursos.module';
     AppComponent,
     // CursosComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
     // CursoDetalheComponent,
     // CursoNaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    CursosModule
+    AppRoutingModule
+    // CursosModule,
+    // AlunosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
