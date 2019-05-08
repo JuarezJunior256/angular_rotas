@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AuthService } from './login/auth.service';
+import { AuthGuard } from './guards/auth-guard';
 
 
 // import { CursosModule } from './cursos/cursos.module';
@@ -32,7 +33,7 @@ import { AuthService } from './login/auth.service';
     // CursosModule,
     // AlunosModule
   ],
-  providers: [ AuthService],
+  providers: [ AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

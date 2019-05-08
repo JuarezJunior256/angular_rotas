@@ -24,4 +24,8 @@ export class AuthService {
       this.mostrarMenu.emit(false);
     }
   }
+
+  usuarioEstaAutenticado() {
+    return this.usuarioAtenticado;
+  }
 }
