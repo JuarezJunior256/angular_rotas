@@ -9,6 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AuthService } from './login/auth.service';
 import { AuthGuard } from './guards/auth-guard';
+import { CursosGuard } from './guards/cursos.guards';
+import { AlunosGuard } from './guards/alunos.guards';
+import { AlunosDeactivateGuard } from './guards/alunos-deactivated.guards';
 
 
 // import { CursosModule } from './cursos/cursos.module';
@@ -33,7 +36,13 @@ import { AuthGuard } from './guards/auth-guard';
     // CursosModule,
     // AlunosModule
   ],
-  providers: [ AuthService, AuthGuard],
+  providers: [
+    AuthService,
+    AuthGuard,
+    CursosGuard,
+    AlunosGuard,
+    AlunosDeactivateGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
