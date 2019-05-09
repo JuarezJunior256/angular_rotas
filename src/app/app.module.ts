@@ -12,6 +12,7 @@ import { AuthGuard } from './guards/auth-guard';
 import { CursosGuard } from './guards/cursos.guards';
 import { AlunosGuard } from './guards/alunos.guards';
 import { AlunosDeactivateGuard } from './guards/alunos-deactivated.guards';
+import { AlunoDetalheResolver } from './guards/aluno-detalhe-resolver';
 
 
 // import { CursosModule } from './cursos/cursos.module';
@@ -41,7 +42,8 @@ import { AlunosDeactivateGuard } from './guards/alunos-deactivated.guards';
     AuthGuard,
     CursosGuard,
     AlunosGuard,
-    AlunosDeactivateGuard
+    AlunosDeactivateGuard,
+    AlunoDetalheResolver
   ],
   bootstrap: [AppComponent]
 })
