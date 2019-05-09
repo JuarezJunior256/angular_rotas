@@ -13,6 +13,7 @@ import { CursosGuard } from './guards/cursos.guards';
 import { AlunosGuard } from './guards/alunos.guards';
 import { AlunosDeactivateGuard } from './guards/alunos-deactivated.guards';
 import { AlunoDetalheResolver } from './guards/aluno-detalhe-resolver';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 
 // import { CursosModule } from './cursos/cursos.module';
@@ -27,6 +28,7 @@ import { AlunoDetalheResolver } from './guards/aluno-detalhe-resolver';
     // CursosComponent,
     LoginComponent,
     HomeComponent,
+    PaginaNaoEncontradaComponent,
     // CursoDetalheComponent,
     // CursoNaoEncontradoComponent
   ],

@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './guards/auth-guard';
 import { CursosGuard } from './guards/cursos.guards';
 import { AlunosGuard } from './guards/alunos.guards';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 const routes: Routes = [
   {path: 'cursos',
@@ -22,11 +23,11 @@ const routes: Routes = [
    canLoad: [AuthGuard]
   },
   {path: 'login', component: LoginComponent},
-  {path: '',
-   component: HomeComponent,
+  {path: 'home', component: HomeComponent,
    canActivate: [AuthGuard],
-   canLoad: [AuthGuard]
-  }
+  },
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '**', component: PaginaNaoEncontradaComponent}
 ];
 
 @NgModule({
